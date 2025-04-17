@@ -1,0 +1,23 @@
+# Mengaktifkan virtual environment 
+source venv/bin/activate (karena pengguna mac)
+
+# Menjalankan skrip ETL pipeline
+
+1. Pastikan semua dependency sudah diinstal dengan 
+pip install -r requirements.txt
+
+2. Menjalankan skrip utama dengam command
+python main.py
+
+Script nanti nya akan menjalankan, extract dari alamat url, transform data untuk cleaning, lalu juga load data
+ke bentuk products.csv, products_clean.csv (sudah di transform), google sheets dan PostgreSQL
+
+# Cara menjalankan Unit Test: 
+1. Jalankan semua unit test di folder '/tests':
+python -m unittest discover -s tests 
+
+# Cara menjalankan test coverage
+coverage run -m unittest discover -s tests
+
+# Untuk mengecek hasil report
+coverage report

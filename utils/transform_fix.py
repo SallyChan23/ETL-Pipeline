@@ -45,6 +45,8 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
                 return "other"
 
         df["category"] = df["Title"].apply(get_category)
+        
+        df["Timestamp"] = pd.to_datetime(df["Timestamp"], errors="coerce")
 
         return df
 
