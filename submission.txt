@@ -21,3 +21,6 @@ coverage run -m unittest discover -s tests
 
 # Untuk mengecek hasil report
 coverage report
+
+# Link URL Google sheet (setelah transform)
+https://docs.google.com/spreadsheets/d/1qpML9ZW0G-FLg80Z4u_w0sVe7D2K_M6uxFVR2wG_VEk/edit?usp=sharing
